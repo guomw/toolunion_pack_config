@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FRAGMENT Type="ReadOnly" CreateVersion="14.3" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="VisualCRedistrib" DisplayName="Visual C++ Redistributable for Visual Studio 2013 Update 5 x86" VersionMin="12.0" SetupFileUrl="vcredist_2013u5_x86.exe" Location="0" ExactSize="0" Operator="1" Options="f" TargetName="Visual C++ Redistributable for Visual Studio 2013\vcredist_2013u5_x86.exe" Feature="VisualCRedistrib"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="SystemFoldermsvcp120.dll" Prereq="VisualCRedistrib" SearchType="0" SearchString="[SystemFolder]msvcp120.dll" VerMin="12" Order="1" MsiKey="SystemFoldermsvcp120.dll" Property="PreReqSearch"/>
+    <ROW SearchKey="SystemFoldermsvcr120.dll" Prereq="VisualCRedistrib" SearchType="0" SearchString="[SystemFolder]msvcr120.dll" VerMin="12" Order="2" MsiKey="SystemFoldermsvcr120.dll" Property="PreReqSearch_1"/>
+    <ROW SearchKey="Version" Prereq="VisualCRedistrib" SearchType="2" SearchString="HKLM\SOFTWARE\Microsoft\DevDiv\VC\Servicing\12.0\RuntimeMinimum\Version" VerMin="12" Order="3" MsiKey="Version" Property="PreReqSearch_2"/>
+  </COMPONENT>
+</FRAGMENT>
