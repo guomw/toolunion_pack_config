@@ -105,7 +105,7 @@
     <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="source\Newtonsoft.Json.dll" SelfReg="false" NextFile="NLog.config"/>
     <ROW File="Sound.wav" Component_="Sound.wav" FileName="Sound.wav" Attributes="0" SourcePath="source\sound\Sound.wav" SelfReg="false" NextFile="widevinecdmadapter.dll"/>
     <ROW File="TopSdk.dll" Component_="TopSdk.dll" FileName="TopSdk.dll" Attributes="0" SourcePath="source\TopSdk.dll" SelfReg="false" NextFile="cef.pak"/>
-    <ROW File="WpfAnimatedGif.dll" Component_="WpfAnimatedGif.dll" FileName="WPFANI~1.DLL|WpfAnimatedGif.dll" Attributes="0" SourcePath="source\WpfAnimatedGif.dll" SelfReg="false"/>
+    <ROW File="WpfAnimatedGif.dll" Component_="WpfAnimatedGif.dll" FileName="WPFANI~1.DLL|WpfAnimatedGif.dll" Attributes="0" SourcePath="source\WpfAnimatedGif.dll" SelfReg="false" NextFile="user.ini"/>
     <ROW File="am.pak" Component_="am.pak" FileName="am.pak" Attributes="0" SourcePath="source\locales\am.pak" SelfReg="false" NextFile="ar.pak"/>
     <ROW File="ar.pak" Component_="am.pak" FileName="ar.pak" Attributes="0" SourcePath="source\locales\ar.pak" SelfReg="false" NextFile="bg.pak"/>
     <ROW File="bg.pak" Component_="am.pak" FileName="bg.pak" Attributes="0" SourcePath="source\locales\bg.pak" SelfReg="false" NextFile="bn.pak"/>
@@ -174,6 +174,7 @@
     <ROW File="toolunion.exe.config" Component_="CefSharp.Core.xml" FileName="TOOLUN~1.CON|toolunion.exe.config" Attributes="0" SourcePath="source\toolunion.exe.config" SelfReg="false" NextFile="TopSdk.dll"/>
     <ROW File="tr.pak" Component_="am.pak" FileName="tr.pak" Attributes="0" SourcePath="source\locales\tr.pak" SelfReg="false" NextFile="uk.pak"/>
     <ROW File="uk.pak" Component_="am.pak" FileName="uk.pak" Attributes="0" SourcePath="source\locales\uk.pak" SelfReg="false" NextFile="vi.pak"/>
+    <ROW File="user.ini" Component_="version.ini" FileName="user.ini" Attributes="0" SourcePath="source\data\user.ini" SelfReg="false"/>
     <ROW File="version.ini" Component_="version.ini" FileName="version.ini" Attributes="0" SourcePath="source\data\version.ini" SelfReg="false" NextFile="devtools_resources.pak"/>
     <ROW File="vi.pak" Component_="am.pak" FileName="vi.pak" Attributes="0" SourcePath="source\locales\vi.pak" SelfReg="false" NextFile="zhCN.pak"/>
     <ROW File="widevinecdmadapter.dll" Component_="widevinecdmadapter.dll" FileName="WIDEVI~1.DLL|widevinecdmadapter.dll" Attributes="0" SourcePath="source\widevinecdmadapter.dll" SelfReg="false" NextFile="CefSharp.BrowserSubprocess.exe"/>
@@ -277,6 +278,7 @@
     <ROW Dialog_="FilesInUse" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[MyProductName]" TextStyle="[ProductNameForSplash]" Order="800" TextLocId="Metro.Control.Text.ProductName" MsiKey="FilesInUse#ProductNameTitle"/>
     <ROW Dialog_="FilesInUse" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[MyManufacturer]" TextStyle="[ManufacturerFont]" Order="900" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="FilesInUse#CompanyText"/>
     <ROW Dialog_="FilesInUse" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="63" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="1000" MsiKey="FilesInUse#ProductLogo"/>
+    <ROW Dialog_="InstallDlg" Control="FolderEdit" Type="PathEdit" X="17" Y="141" Width="290" Height="20" Attributes="7" Property="APPDIR" Text="Control.Text.InstallDlg#Edit_1" TextStyle="[InputCtrlFont]" Order="600" TextLocId="Control.Text.InstallDlg#Edit_1" MsiKey="InstallDlg#FolderEdit"/>
     <ROW Dialog_="InstallDlg" Control="YouMustAgreeCtrl" Type="Hyperlink" X="17" Y="218" Width="311" Height="33" Attributes="196611" Text="[MyProductName] 要安装 &lt;a href=&quot;&quot;&gt;许可条件&lt;/a&gt; 您必须同意。" TextStyle="[HyperlinkFont]" Order="800" TextLocId="Metro.Control.Text.WelcomeDlg#YouMustAgreeCtrl" MsiKey="InstallDlg#YouMustAgreeCtrl"/>
     <ROW Dialog_="InstallDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[MyProductName]" TextStyle="[ProductNameForSplash]" Order="1200" TextLocId="Metro.Control.Text.ProductName" MsiKey="InstallDlg#ProductNameTitle"/>
     <ROW Dialog_="InstallDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[MyManufacturer]" TextStyle="[ManufacturerFont]" Order="1300" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="InstallDlg#CompanyText"/>
