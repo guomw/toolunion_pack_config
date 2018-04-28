@@ -24,7 +24,7 @@
     <ROW Property="ARPHELPLINK" Value="516985724@163.com"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPNOREPAIR" Value="1"/>
-    <ROW Property="ARPPRODUCTICON" Value="ic_logo_exe.exe" Type="8"/>
+    <ROW Property="ARPPRODUCTICON" Value="_.exe" Type="8"/>
     <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
     <ROW Property="AiFeatIcoMainFeature" Value="notityIcon.exe" Type="8"/>
     <ROW Property="AiPreferFastOem" MultiBuildValue="DefaultBuild:1"/>
@@ -185,7 +185,7 @@
     <ROW Property="MyManufacturer" Registry="MyManufacturer" HklmSearch="MyManufacturer" HkcuSearch="MyManufacturer_1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Setup Files" Languages="zh" InstallationType="2" CabsLocation="1" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExeIconPath="..\..\..\WPF\myFristWpf\Resource\icon\ic_logo_exe.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="刀具联盟测试包v1.0.0" UACExecutionLevel="2"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Setup Files" Languages="zh" InstallationType="2" CabsLocation="1" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExeIconPath="ico\48.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="刀具联盟v1.0.0" UACExecutionLevel="2"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
     <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
@@ -507,8 +507,9 @@
     <ROW Dialog="WelcomePrereqDlg" HCentering="50" VCentering="50" Width="345" Height="400" Attributes="0" Title="[MyProductName] [Setup]" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="Dialog.WelcomePrereqDlg" MsiKey="WelcomePrereqDlg"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="ic_logo_exe.exe" SourcePath="..\..\..\WPF\myFristWpf\Resource\icon\ic_logo_exe.ico" Index="0"/>
+    <ROW Name="_.exe" SourcePath="ico\48.ico" Index="0"/>
     <ROW Name="notityIcon.exe" SourcePath="..\..\toolunion_exe\Tools.Union\Resource\notityIcon.ico" Index="0"/>
+    <ROW Name="toolunion.exe" SourcePath="ico\256.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -600,8 +601,8 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
     <ROW Shortcut="_" Directory_="SHORTCUTDIR" Name="刀具联盟" Component_="toolunion.exe" Target="[#toolunion.exe]" Description="刀具联盟" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
-    <ROW Shortcut="__1" Directory_="DesktopFolder" Name="刀具联盟" Component_="toolunion.exe" Target="[#toolunion.exe]" Description="刀具联盟" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
-    <ROW Shortcut="__2" Directory_="StartupFolder" Name="刀具联盟" Component_="toolunion.exe" Target="[#toolunion.exe]" Hotkey="0" Icon_="notityIcon.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR" CustomFlags="1"/>
+    <ROW Shortcut="__1" Directory_="DesktopFolder" Name="刀具联盟" Component_="toolunion.exe" Target="[#toolunion.exe]" Description="刀具联盟" Hotkey="0" Icon_="toolunion.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="__2" Directory_="StartupFolder" Name="刀具联盟" Component_="toolunion.exe" Target="[#toolunion.exe]" Hotkey="0" Icon_="_.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR" CustomFlags="1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="surface"/>
