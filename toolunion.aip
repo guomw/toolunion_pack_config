@@ -20,22 +20,22 @@
     <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
     <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:2"/>
     <ROW Property="ARPCOMMENTS" Value="此 Installer 数据库包含了安装 [|MyProductName] 所需的逻辑和数据。" ValueLocId="*"/>
-    <ROW Property="ARPCONTACT" Value="516985724@163.com"/>
+    <ROW Property="ARPCONTACT" Value="guomwchen@foxmail.com"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPNOREPAIR" Value="1"/>
     <ROW Property="ARPPRODUCTICON" Value="_.exe" Type="8"/>
     <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
-    <ROW Property="ARPURLINFOABOUT" Value="516985724@163.com"/>
+    <ROW Property="ARPURLINFOABOUT" Value="guomwchen@foxmail.com"/>
     <ROW Property="AiFeatIcoMainFeature" Value="_.exe" Type="8"/>
     <ROW Property="AiPreferFastOem" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="AppLogoIcon" Value="applogoicon" MultiBuildValue="DefaultBuild:WechatIMG29.png" Type="1" MsiKey="AppLogoIcon"/>
     <ROW Property="Manufacturer" Value="toolunion"/>
     <ROW Property="MyManufacturer" Value="合么金服" Options="1"/>
     <ROW Property="MyProductName" Value="刀具联盟"/>
-    <ROW Property="ProductCode" Value="2052:{8D133D13-F66B-4FF0-9EF4-81DA1BD3640E} " Type="16"/>
+    <ROW Property="ProductCode" Value="2052:{904673DC-1F9A-494F-9585-9605625BCF4F} " Type="16"/>
     <ROW Property="ProductLanguage" Value="2052"/>
     <ROW Property="ProductName" Value="toolunion"/>
-    <ROW Property="ProductVersion" Value="1.2.7" Type="32"/>
+    <ROW Property="ProductVersion" Value="1.2.8" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="UpgradeCode" Value="{E0E55FFC-C97C-40E2-855E-DBA69D97060D}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -57,7 +57,7 @@
     <ROW Directory="sound_Dir" Directory_Parent="APPDIR" DefaultDir="sound" DirectoryOptions="12"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="AI_CustomARPName" ComponentId="{F2F4965F-3AF3-479D-A344-1FF1781CD447}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_CustomARPName" ComponentId="{6B58DBD9-A979-4711-B757-200CC348410F}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
     <ROW Component="AI_DisableModify" ComponentId="{8AB89B55-3245-4CA0-AFBF-037A8A301E7B}" Directory_="APPDIR" Attributes="4" KeyPath="NoModify" Options="1"/>
     <ROW Component="AI_ExePath" ComponentId="{F75A4BBF-90E5-4C89-BADE-8FDDFA65A0B4}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{D926A002-EBB6-453E-A84C-156C53A8ACFC}" Directory_="APPDIR" Attributes="0"/>
@@ -108,7 +108,7 @@
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="4" UpdatesUrl="http://www.example.com/download/updates.txt"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Setup Files" PackageFileName="release_v1.2.7" Languages="zh" InstallationType="2" CabsLocation="1" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExeIconPath="ico\48.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="release_v1.2.7" UACExecutionLevel="2"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Setup Files" PackageFileName="release_v1.2.8" Languages="zh" InstallationType="2" CabsLocation="1" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExeIconPath="ico\48.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="release_v1.2.8" UACExecutionLevel="2"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
     <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
@@ -416,7 +416,6 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="_.exe" SourcePath="ico\48.ico" Index="0"/>
-    <ROW Name="toolunion.exe" SourcePath="ico\256.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -472,6 +471,9 @@
     <ROW LockObject="data_Dir" Table="CreateFolder" User="Users" Permission="1880096767" Flags="0"/>
     <ROW LockObject="sound_Dir" Table="CreateFolder" User="Administrators" Permission="1880096767" Flags="0"/>
     <ROW LockObject="sound_Dir" Table="CreateFolder" User="Users" Permission="1880096767" Flags="0"/>
+    <ROW LockObject="APPDIR" Table="CreateFolder" User="Everyone" Permission="1880096767" Flags="0"/>
+    <ROW LockObject="data_Dir" Table="CreateFolder" User="Everyone" Permission="1880096767" Flags="0"/>
+    <ROW LockObject="sound_Dir" Table="CreateFolder" User="Everyone" Permission="1880096767" Flags="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
     <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
@@ -513,7 +515,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
     <ROW Shortcut="_" Directory_="SHORTCUTDIR" Name="刀具联盟" Component_="toolunion.exe" Target="[#toolunion.exe]" Description="刀具联盟" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
-    <ROW Shortcut="__1" Directory_="DesktopFolder" Name="刀具联盟" Component_="toolunion.exe" Target="[#toolunion.exe]" Description="刀具联盟" Hotkey="0" Icon_="toolunion.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="__1" Directory_="DesktopFolder" Name="刀具联盟" Component_="toolunion.exe" Target="[#toolunion.exe]" Description="刀具联盟" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR" CustomFlags="1"/>
     <ROW Shortcut="__2" Directory_="StartupFolder" Name="刀具联盟" Component_="toolunion.exe" Target="[#toolunion.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR" CustomFlags="1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
